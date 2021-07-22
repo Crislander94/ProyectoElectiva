@@ -1,7 +1,25 @@
 <resources>
-    <string name="app_name">AgendamientoConsultorioOdontologico</string>
+    <string name="app_name">Proyecto Grupo 1</string>
 
-
+    <!--Activity strings main-->
+    <string name="button_ir_paciente_prueba">Ir paciente</string>
+    <string name="button_ir_doctor_prueba">Ir Doctor</string>
+    <string name="name_company">HealthMedical</string>
+    <string name="description_logo">Logo de empresa</string>
+    <!-- Bienvenido Paciente -->
+    <string name="hello">Hello!</string>
+    <string name="name_user">Cristhian</string>
+    <string name="description_profile">Profile</string>
+    <string name="main_title_paciente">Panel Principal</string>
+    <string name="description_main_activity">Escoja una de las siguientes opciones</string>
+    <!-- Opciones Citas -->
+    <string name="description_opcion_image">Ver Cita</string>
+    <string name="option_go_list_citas">Ver Citas Agendadas</string>
+    <string name="description_list_citas">Observa que citas tienes pendientes</string>
+    <string name="option_go_nueva_cita">Agendar Nueva Cita</string>
+    <string name="description_nueva_cita">Solicita una nueva cita con los mejores odontologos</string>
+    <string name="option_cerrar_sesion">Cerrar Sesion</string>
+    <string name="description_cerrar_sesion">Vuelve a la pantalla Login</string>
     <!--  Strings Pacientes  -->
     <!--  Buttons Mains -->
 
