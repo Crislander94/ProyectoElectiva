@@ -30,6 +30,7 @@
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:paddingLeft="10dp"
             android:paddingTop="5dp"
             android:text="@string/name_company"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -43,6 +44,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/description_logo"
             android:focusableInTouchMode="false"
+            android:paddingStart="140dp"
             app:srcCompat="@drawable/ic_logo"
             tools:ignore="VectorDrawableCompat"
             tools:srcCompat="@drawable/ic_logo" />
@@ -109,7 +111,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
             android:layout_weight="1"
             android:background="@drawable/bg_option_ver_citas"
             android:onClick="GoCreateCit"
@@ -123,8 +125,8 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_baseline_post_add_24"
-                tools:srcCompat="@drawable/ic_baseline_post_add_24"
-                tools:ignore="VectorDrawableCompat" />
+                tools:ignore="VectorDrawableCompat"
+                tools:srcCompat="@drawable/ic_baseline_post_add_24" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -153,7 +155,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
             android:background="@drawable/bg_option_nueva_cita"
             android:onClick="GoListCitas"
             android:orientation="horizontal"
@@ -165,8 +167,8 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_baseline_preview_24"
-                tools:srcCompat="@drawable/ic_baseline_preview_24"
-                tools:ignore="VectorDrawableCompat" />
+                tools:ignore="VectorDrawableCompat"
+                tools:srcCompat="@drawable/ic_baseline_preview_24" />
 
             <LinearLayout
                 android:layout_width="match_parent"
