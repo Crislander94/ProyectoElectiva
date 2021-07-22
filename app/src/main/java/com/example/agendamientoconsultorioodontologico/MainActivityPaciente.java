@@ -21,7 +21,7 @@ public class MainActivityPaciente extends AppCompatActivity {
         Intent i = new Intent(this, DetalleCitas.class);
         startActivity(i);
     }public void GoLogin(View view){
-        Intent i = new Intent(this, ListCitas.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 
