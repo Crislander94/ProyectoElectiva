@@ -18,4 +18,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, MainActivityPaciente.class);
         startActivity(i);
     }
+    public void GoMainActivityDoctor(View view){
+        Intent i = new Intent(this, MainActivity2_Doctor.class);
+        startActivity(i);
+    }
 }
