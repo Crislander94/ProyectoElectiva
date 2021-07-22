@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgendamientoConsultorioOdontologico">
         <activity android:name=".MainActivity2_Doctor"></activity>
+        <activity android:name=".DetalleCitas"></activity>
+        <activity android:name=".ListCitas" />
+        <activity android:name=".CreateCit" />
+        <activity android:name=".MainActivityPaciente" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
