@@ -14,11 +14,11 @@ public class MainActivityPaciente extends AppCompatActivity {
         setContentView(R.layout.activity_main_paciente);
     }
     public void GoCreateCit(View view){
-        Intent i = new Intent(this, CreateCit.class);
+        Intent i = new Intent(this, CreateCitPaciente.class);
         startActivity(i);
     }
     public void GoListCitas(View view){
-        Intent i = new Intent(this, DetalleCitas.class);
+        Intent i = new Intent(this, DetalleCitasPaciente.class);
         startActivity(i);
     }public void GoLogin(View view){
         Intent i = new Intent(this, MainActivity.class);

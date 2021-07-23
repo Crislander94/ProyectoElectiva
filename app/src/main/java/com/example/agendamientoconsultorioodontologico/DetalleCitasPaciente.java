@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CreateCit extends AppCompatActivity {
+public class DetalleCitasPaciente extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_cita);
+        setContentView(R.layout.activity_detalle_citas_paciente);
     }
 }
