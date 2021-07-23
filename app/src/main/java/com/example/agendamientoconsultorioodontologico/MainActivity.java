@@ -45,12 +45,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void GoMainActivityPaciente(View view){
-        Intent i = new Intent(this, MainActivityPaciente.class);
+    public void GoRegistrarUsuario(View view){
+        Intent i = new Intent(this, registrarUsuario.class);
         startActivity(i);
     }
-    public void GoMainActivityDoctor(View view){
-        Intent i = new Intent(this, MainActivity2_Doctor.class);
-        startActivity(i);
-    }
+
 }
