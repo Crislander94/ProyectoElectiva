@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AgendamientoConsultorioOdontologico">
+        <activity android:name=".MainActivity_descripcion_doc"></activity>
         <activity android:name=".DetalleCitasPaciente" />
         <activity android:name=".ListCitasPaciente" />
         <activity android:name=".CreateCitPaciente" />
-        <activity android:name=".MainActivity2_Doctor"></activity>
+        <activity android:name=".MainActivity2_Doctor" />
         <activity android:name=".MainActivityPaciente" />
         <activity android:name=".MainActivity">
             <intent-filter>
