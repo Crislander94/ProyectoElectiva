@@ -2,9 +2,11 @@ package com.example.agendamientoconsultorioodontologico;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity2_Doctor extends AppCompatActivity {
@@ -52,6 +54,14 @@ public class MainActivity2_Doctor extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu,mimenu);
 
         return true;
+    }
+
+    public void Descripcion(View view){
+        Intent descripcion = new Intent(this,MainActivity_descripcion_doc.class);
+        descripcion.putExtra("pasardatos","Paciente: Jose Maria Lee\\n\" +\n" +
+                "                \"Fecha:15/05/2021\\n\" +\n" +
+                "                \"Hora: 15:15");
+        startActivity(descripcion);
     }
 
 
