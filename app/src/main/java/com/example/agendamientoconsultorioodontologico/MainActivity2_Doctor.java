@@ -64,5 +64,27 @@ public class MainActivity2_Doctor extends AppCompatActivity {
         startActivity(descripcion);
     }
 
+    public void Descripcion2(View view){
+        Intent descripcion2 = new Intent(this,MainActivity_descripcion_doc.class);
+        descripcion2.putExtra("pasardatos2","Paciente: Juan Raul Macillo\n" +
+                "Fecha: 16/05/2021\n" +
+                "Hora: 16:00");
+        startActivity(descripcion2);
+    }
+
+    public void Descripcion3(View view){
+        Intent descripcion3 = new Intent(this,MainActivity_descripcion_doc.class);
+        descripcion3.putExtra("pasardatos2","Paciente: Jaime Ecker Mosquez\\n\" +\n" +
+                "                \"Fecha:17/05/2021\\n\" +\n" +
+                "                \"Hora: 12:10");
+        startActivity(descripcion3);
+    }
+    public void Descripcion4(View view){
+        Intent descripcion4 = new Intent(this,MainActivity_descripcion_doc.class);
+        descripcion4.putExtra("pasardatos2","Paciente: Michael Castillo Espinoza\\n\" +\n" +
+                "                \"Fecha:15/05/2021\\n\" +\n" +
+                "                \"Hora: 15:15");
+        startActivity(descripcion4);
+    }
 
 }

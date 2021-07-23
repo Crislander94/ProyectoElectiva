@@ -15,6 +15,7 @@ public class MainActivity_descripcion_doc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_descripcion_doc);
         datos=getIntent().getExtras();
+
         String datosobtenidos = datos.getString("pasardatos\n" +
                 "consulta medica de caries \n" +
                 "Limpieza bucal \n" +
