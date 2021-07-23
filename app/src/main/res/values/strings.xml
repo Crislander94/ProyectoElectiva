@@ -25,6 +25,10 @@
     <!--  Strings Pacientes  -->
     <!--  Buttons Mains -->
 
+    <string name="btn_login_aceptar">Aceptar</string>
+    <string name="btn_login_registrar">Registrar</string>
+    <string name="btn_login_salir">Salir</string>
+
     <!-- =====================
         Create Cita Paciente
      ==========================-->
@@ -102,4 +106,9 @@
         <br /> convallis ligula eu metus volutpat congue. Morbi lobortis mollis nibh, semper aliquet
         <br /> ligula cursus eget. Nam convallis mi purus, sed volutpat est tristique quis. Vivamus
         <br /> luctus metus id velit ullamcorper sodales. Proin accumsan sollicitudin urna quis sagittis.</string>
+
+    <string name="edt_usuario">Usuario</string>
+    <string name="edt_password">Contraseña</string>
+    <string name="rd_paciente">Paciente</string>
+    <string name="rd_doctor">Doctor</string>
 </resources>

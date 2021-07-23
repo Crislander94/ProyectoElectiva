@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity_descripcion_doc extends AppCompatActivity {
 
-    Bundle datos;
+//    Bundle datos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +19,13 @@ public class MainActivity_descripcion_doc extends AppCompatActivity {
 
 
 
-        datos=getIntent().getExtras();
-        String datosobtenidos = datos.getString("pasardatos\n" +
-                "consulta medica de caries \n" +
-                "Limpieza bucal \n" +
-                "Historial: se mando al paciente un antiflamatorio benzocaina");
-        TextView mostrardatos= (TextView) findViewById(R.id.txt_des1);
-        mostrardatos.setText(datosobtenidos);
+//        datos=getIntent().getExtras();
+//        String datosobtenidos = datos.getString("pasardatos\n" +
+//                "consulta medica de caries \n" +
+//                "Limpieza bucal \n" +
+//                "Historial: se mando al paciente un antiflamatorio benzocaina");
+//        TextView mostrardatos= (TextView) findViewById(R.id.txt_des1);
+//        mostrardatos.setText(datosobtenidos);
 
     }
 
