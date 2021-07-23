@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity_descripcion_doc">
 
-    <item android:id="@+id/salir"
-        android:title="Salir"/>
+    <item
+        android:id="@+id/cerrarsesion"
+        android:onClick="Salir"
+        android:title="Salir" />
 
 
 </menu>

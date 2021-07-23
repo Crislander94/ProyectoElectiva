@@ -87,4 +87,9 @@ public class MainActivity2_Doctor extends AppCompatActivity {
         startActivity(descripcion4);
     }
 
+    public void CerrarSesion(View view){
+        Intent cerrarsesion = new Intent(this,MainActivity.class);
+        startActivity(cerrarsesion);
+
+    }
 }
