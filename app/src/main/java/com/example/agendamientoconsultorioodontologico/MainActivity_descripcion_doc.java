@@ -16,7 +16,9 @@ public class MainActivity_descripcion_doc extends AppCompatActivity {
         setContentView(R.layout.activity_main_descripcion_doc);
         datos=getIntent().getExtras();
         String datosobtenidos = datos.getString("pasardatos\n" +
-                "consulta medica de caries ");
+                "consulta medica de caries \n" +
+                "Limpieza bucal \n" +
+                "Historial: se mando al paciente un antiflamatorio benzocaina");
         TextView mostrardatos= (TextView) findViewById(R.id.txt_des1);
         mostrardatos.setText(datosobtenidos);
     }
