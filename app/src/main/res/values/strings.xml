@@ -73,4 +73,33 @@
     <string name="data_servicio3">Odontologia Preventiva</string>
 
     <string name="btn_regresar">Regresar</string>
+
+    <!-- =====================
+        Detalle Cita Paciente
+     ==========================-->
+    <string name="title_detalle_cita">Detalle Cita: 23/07/2021</string>
+    <string name="description_detalle_cita">Observa los detalles de la cita</string>
+
+
+    <string name="especialidad_doctor">Odontologo</string>
+    <string name="lbl_date_cita">Dia de la cita</string>
+    <string name="data_cita_detalle">Viernes, Julio 23</string>
+    <string name="lbl_time_cita">Hora de la cita</string>
+    <string name="data_time_cita">15.00h</string>
+    <string name="lbl_direccion_cita">Direccion</string>
+    <string name="data_direccion_cita">Amarillo Health Medical Center <br /> 1984 Main Street - 24278 <br />
+    Guayaquil, Guayas</string>
+    <string name="lbl_phone_cita">Numero/Doctor</string>
+    <string name="data_phone_cita">094987878</string>
+    <string name="lbl_email_cita">Email/Doctor</string>
+    <string name="data_email_cita">flores@gmail.com</string>
+    <string name="lbl_notas_cita">Notas</string>
+    <string name="data_notas_cita">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula auctor
+        lacus malesuada fringilla. Cras tincidunt nisl vel est bibendum ornare. Integer
+        ullamcorper rhoncus lectus a congue. Nulla facilisi. Aenean rutrum ac
+        <br /> elit at dapibus. Phasellus rutrum vel nunc a pellentesque. Nulla egestas placerat
+        <br /> gravida. Mauris non augue sit amet odio fermentum pretium malesuada at ipsum. Phasellus
+        <br /> convallis ligula eu metus volutpat congue. Morbi lobortis mollis nibh, semper aliquet
+        <br /> ligula cursus eget. Nam convallis mi purus, sed volutpat est tristique quis. Vivamus
+        <br /> luctus metus id velit ullamcorper sodales. Proin accumsan sollicitudin urna quis sagittis.</string>
 </resources>

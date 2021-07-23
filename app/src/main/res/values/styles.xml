@@ -3,6 +3,9 @@
     <style name="bg_dark">
         <item name="android:background">#121212</item>
     </style>
+    <style name="text_dark">
+        <item name="android:textColor">#000</item>
+    </style>
     <style name="color_primary">
         <item name="android:textColor">#3700b3</item>
     </style>
@@ -21,6 +24,10 @@
     <style name="bg_primary_low" parent="color_primary">
         <item name="android:background">#6c65ed</item>
     </style>
+    <style name="bg_primary_low1" parent="mb_2">
+        <item name="android:background">#6c65ed</item>
+    </style>
+
     <style name="color_primary_low">
         <item name="android:textColor">#6c65ed</item>
     </style>
@@ -39,7 +46,9 @@
     </style>
     <style name="bg_white_low" parent="mb_4">
         <item name="android:background">#f2f2f2</item>
-
+    </style>
+    <style name="bg_white_low2">
+        <item name="android:background">#f2f2f2</item>
     </style>
     <style name="titles">
         <item name="android:textColor">#000</item>
@@ -47,6 +56,10 @@
         <item name="android:textSize">18sp</item>
     </style>
     <style name="descript_styles">
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="style_bold">
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">#000</item>
     </style>
 </resources>
