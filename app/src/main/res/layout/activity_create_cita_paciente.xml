@@ -5,24 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#121212"
-    tools:context=".CreateCitPaciente">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Crear Cita"
-            android:textColor="#F8F8F8"
-            android:textSize="40sp" />
-    </LinearLayout>
+    tools:context=".CreateCitPaciente"
+    style="@style/bg_dark">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -39,7 +23,9 @@
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:paddingStart="20dp"
             android:paddingTop="5dp"
+            android:paddingEnd="5dp"
             android:text="@string/name_company"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#6C63FF"
@@ -52,9 +38,290 @@
             android:layout_weight="1"
             android:contentDescription="@string/description_logo"
             android:focusableInTouchMode="false"
+            android:paddingStart="145dp"
+            android:paddingEnd="5dp"
             app:srcCompat="@drawable/ic_logo"
             tools:ignore="VectorDrawableCompat"
             tools:srcCompat="@drawable/ic_logo" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtMainTitleActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_create_cita"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptionMainActivityPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/description_create_cita"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="false"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/mb_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- Begin Spinner Professional   -->
+                <ImageView
+                    android:id="@+id/img_profesional"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_professional"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:srcCompat="@drawable/ic_professional" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtProfesional"
+                        style="@style/text_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/label_profesional"
+                        tools:ignore="NestedWeights" />
+
+                    <Spinner
+                        android:id="@+id/spprofessional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mb_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgservice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_service"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:srcCompat="@drawable/ic_service" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtServicio"
+                        style="@style/text_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_service" />
+
+                    <Spinner
+                        android:id="@+id/spservices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mb_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_fecha_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_calendar"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFechaInicio"
+                        style="@style/text_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblfecha_inicio" />
+
+                    <EditText
+                        android:id="@+id/datefechainicio"
+                        style="@style/text_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/hint_fecha"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="@string/hint_fecha"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mb_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_fechaexp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_calendar"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:srcCompat="@drawable/ic_calendar" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblfechafin"
+                        style="@style/text_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblfecha_exp" />
+
+                    <EditText
+                        android:id="@+id/datefechaexp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/hint_fecha"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="@string/hint_fecha"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mb_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_sintomas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_sintomas"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:srcCompat="@drawable/ic_sintomas" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtSintomas"
+                        style="@style/text_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblsintomas" />
+
+                    <EditText
+                        android:id="@+id/textareaSintomas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/hint_textarea_sintomas"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="@string/hint_textarea_sintomas"
+                        android:inputType="textMultiLine" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="40dp">
+
+                <Button
+                    android:id="@+id/btn_agendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:onClick="GoMainActivityPaciente"
+                    android:text="@string/btn_agendar" />
+
+                <Button
+                    android:id="@+id/btn_cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:onClick="GoMainActivityPaciente"
+                    android:text="@string/btn_cancelar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

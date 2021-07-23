@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    style="@style/bg_dark"
     tools:context=".MainActivityPaciente">
 
     <View
@@ -32,6 +32,7 @@
             android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingTop="5dp"
+            android:paddingRight="10dp"
             android:text="@string/name_company"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#6C63FF"
@@ -44,7 +45,8 @@
             android:layout_weight="1"
             android:contentDescription="@string/description_logo"
             android:focusableInTouchMode="false"
-            android:paddingStart="140dp"
+            android:paddingStart="145dp"
+            android:paddingEnd="5dp"
             app:srcCompat="@drawable/ic_logo"
             tools:ignore="VectorDrawableCompat"
             tools:srcCompat="@drawable/ic_logo" />
@@ -254,7 +256,7 @@
             android:layout_weight="1"
             android:text="@string/main_title_paciente"
             android:textColor="#FFFFFF"
-            android:textSize="22dp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <TextView

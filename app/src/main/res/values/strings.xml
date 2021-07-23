@@ -25,4 +25,52 @@
     <!--  Strings Pacientes  -->
     <!--  Buttons Mains -->
 
+    <!-- =====================
+        Create Cita Paciente
+     ==========================-->
+    <string name="title_create_cita">Agenda Nueva Cita</string>
+    <string name="description_create_cita">Llena los datos del formulario</string>
+    <string name="label_profesional">Profesional:</string>
+    <string name="hint_profesional">Seleccione su profesional</string>
+    <string name="label_service">Servicio: </string>
+    <string-array name="array_professionals">
+        <item>Dr. Gonzalez</item>
+        <item>Dr. Perez</item>
+        <item>Dra. Dolores</item>
+        <item>Dra. Flores</item>
+    </string-array>
+    <string-array name="service_odontologia">
+        <item>Limpieza Dental</item>
+        <item>Endodoncia</item>
+        <item>Ortopedia Maxilofacial</item>
+        <item>Odontologia Preventiva</item>
+    </string-array>
+    <string name="lblfecha_inicio">Fecha Agendamiento Cita:</string>
+    <string name="lblfecha_exp">Fecha Expiracion Cita:</string>
+    <string name="hint_fecha">DD/MM/YYYY</string>
+    <string name="lblsintomas">Sintomas: </string>
+    <string name="hint_textarea_sintomas">Ingrese sus sintomas</string>
+    <string name="btn_agendar">Agendar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <!-- =====================
+        List Cita Paciente
+     ==========================-->
+    <string name="title_list_cita">Lista de tus citas</string>
+    <string name="description_list_cita">Observa que citas tienes agendadas</string>
+
+    <string name="data_fecha_cita1">17/08/2021</string>
+
+    <string name="data_servicio">Limpieza Dental</string>
+    <string name="data_name_doctor">Dra. Flores</string>
+    <string name="data_consultorio">Health Medical</string>
+
+    <string name="data_servicio1">Endodoncia</string>
+    <string name="data_name_doctor1">Dra. Dolores</string>
+
+    <string name="data_servicio2">Ortopedia Maxilofacial</string>
+    <string name="data_name_doctor2">Dr. Gonzalez</string>
+
+    <string name="data_servicio3">Odontologia Preventiva</string>
+
+    <string name="btn_regresar">Regresar</string>
 </resources>
