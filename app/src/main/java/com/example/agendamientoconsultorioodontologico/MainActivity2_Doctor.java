@@ -58,9 +58,7 @@ public class MainActivity2_Doctor extends AppCompatActivity {
 
     public void Descripcion(View view){
         Intent descripcion = new Intent(this,MainActivity_descripcion_doc.class);
-        descripcion.putExtra("pasardatos","Paciente: Jose Maria Lee\n\" +\n" +
-                "                \"Fecha:15/05/2021\\n\" +\n" +
-                "                \"Hora: 15:15");
+        descripcion.putExtra("pasardatos",miTextoView1.getText().toString());
         startActivity(descripcion);
     }
 
