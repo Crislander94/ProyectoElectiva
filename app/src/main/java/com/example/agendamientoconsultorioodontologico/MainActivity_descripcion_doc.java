@@ -24,7 +24,7 @@ public class MainActivity_descripcion_doc extends AppCompatActivity {
                 "consulta medica de caries \n" +
                 "Limpieza bucal \n" +
                 "Historial: se mando al paciente un antiflamatorio benzocaina");
-        TextView mostrardatos= (TextView) findViewById(R.id.txt_des1);
+        TextView mostrardatos= (TextView) findViewById(R.id.txt_descriptivo);
         mostrardatos.setText(datosobtenidos);
 
     }

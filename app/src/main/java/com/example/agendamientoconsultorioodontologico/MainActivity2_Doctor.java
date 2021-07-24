@@ -19,7 +19,7 @@ public class MainActivity2_Doctor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity2_doctor);
 
-        miTextoView1 = (TextView) findViewById(R.id.txt_des1);
+        miTextoView1 = (TextView) findViewById(R.id.txt_descriptivo);
         miTextoView2 = (TextView) findViewById(R.id.txt_descripcion2);
         miTextoView3 = (TextView) findViewById(R.id.txt_descripcion3);
         miTextoView4 = (TextView) findViewById(R.id.txt_descripcion4);
