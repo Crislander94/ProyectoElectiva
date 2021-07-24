@@ -130,4 +130,6 @@
 
     <string name="text_main_registrar_user">Registrate</string>
     <string name="txtDescriptionRegistrarte">Registrate para obtener beneficios</string>
+
+    <string name="btn_eliminar">Cancelar Cita</string>
 </resources>

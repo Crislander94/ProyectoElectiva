@@ -76,14 +76,31 @@
             android:text="@string/description_detalle_cita"
             android:textColor="#FFFFFF" />
 
-        <Button
-            android:id="@+id/button"
-            style="@style/bg_primary_low"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="GoListCitasPaciente"
-            android:text="@string/btn_regresar" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/bg_primary_low"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="GoListCitasPaciente"
+                android:text="@string/btn_regresar" />
+
+            <Button
+                android:id="@+id/btneliminar"
+                style="@style/bg_primary_low"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="@string/btn_eliminar" />
+        </LinearLayout>
 
     </LinearLayout>
 
