@@ -6,8 +6,8 @@
 
     <item
         android:id="@+id/cerrarsesion"
-        android:onClick="CerrarSesion"
         android:icon="@drawable/ic_closed"
-        android:title="CerrarSesion" />
+        android:onClick="CerrarSesion"
+        android:title="CerrarSesion1" />
 
 </menu>
