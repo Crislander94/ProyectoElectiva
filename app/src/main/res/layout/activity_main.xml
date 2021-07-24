@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_professional" />
+        app:srcCompat="@drawable/ic_professional"
+        tools:ignore="VectorDrawableCompat" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -28,7 +29,7 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Usuario"
+        android:autofillHints="@string/edt_usuario"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,53 +42,72 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:autofillHints="edt_password"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="match_parent"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="280dp"
-        android:text="Paciente"
-        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword">
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="280dp"
-        android:text="Doctor"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        <RadioButton
+            android:id="@+id/rdpaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="280dp"
+            android:text="@string/rd_paciente"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rddoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="280dp"
+            android:text="@string/rd_doctor"
+            android:textColor="@color/white" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/btn_aceptar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="31dp"
         android:layout_marginEnd="32dp"
         android:background="#ea1e63"
-        android:text="Aceptatr"
+        android:text="@string/btn_login_aceptar"
+        app:backgroundTint="#ea1e63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="32dp"
+        android:background="#ea1e63"
+        android:text="@string/btn_login_salir"
         app:backgroundTint="#ea1e63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrar" />
 
     <Button
         android:id="@+id/btn_registrar"
@@ -97,23 +117,11 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="#ea1e63"
-        android:text="Registrar"
+        android:onClick="GoRegistrarUsuario"
+        android:text="@string/btn_login_registrar"
         app:backgroundTint="#ea1e63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_aceptar" />
 
-    <Button
-        android:id="@+id/btn_salir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="#ea1e63"
-        android:text="Salir"
-        app:backgroundTint="#ea1e63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_registrar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
