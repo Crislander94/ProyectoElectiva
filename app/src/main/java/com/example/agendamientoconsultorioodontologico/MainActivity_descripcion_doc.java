@@ -24,7 +24,7 @@ public class MainActivity_descripcion_doc extends AppCompatActivity {
         String dato = getIntent().getStringExtra("pasardatos");
         tv1.setText("consulta medica de caries \n" +
                 "Limpieza bucal \n" +
-                "Historial: se mando al paciente un antiflamatorio benzocaina"+ dato);
+                "Historial: se mando al paciente un antiflamatorio benzocaina\n"+ dato);
 
     }
 
