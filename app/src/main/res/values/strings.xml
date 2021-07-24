@@ -111,4 +111,23 @@
     <string name="edt_password">Contraseña</string>
     <string name="rd_paciente">Paciente</string>
     <string name="rd_doctor">Doctor</string>
+    <!-- =====================
+        Registro Usuario
+     ==========================-->
+    <string name="lbl_nombre">Nombres</string>
+    <string name="lbl_cedula">Cedula</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_telefono">Telefono</string>
+    <string name="lbl_password">Contraseña</string>
+
+    <string name="hint_nombre">Ingrese sus nombres</string>
+    <string name="hint_cedula">Ingrese su cedula</string>
+    <string name="hint_email">Ingrese su correo</string>
+    <string name="hint_telefono">Ingrese su telefono</string>
+    <string name="hint_password">Ingrese su Contraseña</string>
+
+    <string name="btn_registrar">Registrar</string>
+
+    <string name="text_main_registrar_user">Registrate</string>
+    <string name="txtDescriptionRegistrarte">Registrate para obtener beneficios</string>
 </resources>
