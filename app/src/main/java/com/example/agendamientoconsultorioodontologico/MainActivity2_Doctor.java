@@ -48,13 +48,13 @@ public class MainActivity2_Doctor extends AppCompatActivity {
     }
 
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu mimenu){
-//
-//        getMenuInflater().inflate(R.menu.menu,mimenu);
-//
-//        return true;
-//    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu mimenu){
+
+        getMenuInflater().inflate(R.menu.menu,mimenu);
+
+        return true;
+    }
 
     public void Descripcion(View view){
         Intent descripcion = new Intent(this,MainActivity_descripcion_doc.class);
