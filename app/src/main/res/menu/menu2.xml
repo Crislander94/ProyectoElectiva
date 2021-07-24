@@ -5,7 +5,7 @@
     tools:context=".MainActivity_descripcion_doc">
 
     <item
-        android:id="@+id/cerrarsesion"
+        android:id="@+id/Salir"
         android:icon="@drawable/ic_baseline_exit_to_app_24"
         android:onClick="Salir"
         android:title="Salir" />
