@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -29,13 +30,25 @@ public class MainActivity_descripcion_doc extends AppCompatActivity {
     }
 
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu mimenu){
-//
-//        getMenuInflater().inflate(R.menu.menu2,mimenu);
-//
-//        return true;
-//    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu mimenu){
+
+        getMenuInflater().inflate(R.menu.menu2,mimenu);
+
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.salir:
+                Intent intent = new Intent(this, MainActivity2_Doctor.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     public void Salir(View view){
         Intent salir= new Intent(this,MainActivity2_Doctor.class);

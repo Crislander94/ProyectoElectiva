@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -55,7 +56,19 @@ public class MainActivity2_Doctor extends AppCompatActivity {
 
         return true;
     }
-
+    //Evento click cuando un item del menu es seleccionado
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.cerrarsesion:
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     public void Descripcion(View view){
         Intent descripcion = new Intent(this,MainActivity_descripcion_doc.class);
         descripcion.putExtra("pasardatos",miTextoView1.getText().toString());
