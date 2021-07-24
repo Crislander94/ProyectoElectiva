@@ -14,14 +14,15 @@
         <activity android:name=".DetalleCitasPaciente" />
         <activity android:name=".ListCitasPaciente" />
         <activity android:name=".CreateCitPaciente" />
-        <activity android:name=".MainActivity2_Doctor" />
-        <activity android:name=".MainActivityPaciente" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity2_Doctor" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MainActivityPaciente" />
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 
