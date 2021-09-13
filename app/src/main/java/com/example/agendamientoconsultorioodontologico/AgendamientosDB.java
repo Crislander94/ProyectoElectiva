@@ -16,6 +16,12 @@ public class AgendamientosDB {
         String ID = "cod_cita";
         String DOCTOR = "cod_doctor";
         String PACIENTE = "cod_paciente";
-        String 
+        String SERVICIO  = "servicio";
+        String FECHAAGENDA = "fecha_agendamiento";
+        String FECHAEXP = "fecha_expiracion";
+        String SINTOMAS = "sintomas";
     }
+
+
+
 }

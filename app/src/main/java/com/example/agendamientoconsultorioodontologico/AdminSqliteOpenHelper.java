@@ -1,0 +1,30 @@
+package com.example.agendamientoconsultorioodontologico.;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.support.annotation.Nullable;
+
+public class AdminSqliteOpenHelper extends SQLiteOpenHelper {
+    public AdminSqliteOpenHelper( Context context, String name,  SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+    //        String create_table = "CREATE TABLE users(" +
+//                "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+//                "username TEXT, " +
+//                "password TEXT, " +
+//                "email TEXT, " +
+//                "telefono TEXT, " +
+//                "cedula TEXT, " +
+//                "fecha_nac Text, " +
+//                "ciudad Text, " +
+//                "sexo TEXT )";
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE paciente(id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, password TEXT,email TEXT, telefono TEXT, fecha_nac Text, ciudad Text,sexo TEXT,cedula TEXT)");
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+    }
+}
