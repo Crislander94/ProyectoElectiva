@@ -20,6 +20,9 @@ public class CreateCitPaciente extends AppCompatActivity {
     RadioButton RDFemenino, RDMasculino;
     Calendar calendar;
     EditText dateinicio, datexp;
+
+    ConexionSQLiteDB csb;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
