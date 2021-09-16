@@ -1,9 +1,13 @@
 package com.example.agendamientoconsultorioodontologico;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.DatePickerDialog;
+import android.app.Notification;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,6 +16,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
+import java.nio.channels.Channel;
 import java.util.Calendar;
 
 public class CreateCitPaciente extends AppCompatActivity {
@@ -20,6 +25,8 @@ public class CreateCitPaciente extends AppCompatActivity {
     RadioButton RDFemenino, RDMasculino;
     Calendar calendar;
     EditText dateinicio, datexp;
+    private final static String CHANNEL_ID ="Notificaion";
+    private final static int Notificacion_ID=0;
 
     ConexionSQLiteDB csb;
 
@@ -27,6 +34,7 @@ public class CreateCitPaciente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_cita_paciente);
+        csb = new ConexionSQLiteDB(getApplicationContext(),"Registro",null,1);
         Spinner services = findViewById(R.id.spservices);
         Spinner proffesionals =  findViewById(R.id.spprofessional);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -47,6 +55,7 @@ public class CreateCitPaciente extends AppCompatActivity {
         final int day = calendar.get(Calendar.DAY_OF_MONTH);
         //Obtener la fecha del datePicker Seleccionada
         dateinicio.setOnClickListener(v ->{
+            createNotiificaion();
             DatePickerDialog datePickerDialog = new DatePickerDialog(
                     CreateCitPaciente.this, (view, year1, month1, dayOfMonth) -> {
                 month1 = month1 +1;
@@ -75,5 +84,22 @@ public class CreateCitPaciente extends AppCompatActivity {
     public void GoMainActivityPaciente(View view){
         Intent i = new Intent(this, MainActivityPaciente.class);
         startActivity(i);
+    }
+
+    public void createNotiificaion(){
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(),CHANNEL_ID );
+        builder.setSmallIcon(R.drawable.circle);
+        builder.setContentTitle("notificacion de registro");
+        builder.setContentText("notificacion");
+        builder.setColor(Color.BLUE);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setLights(Color.MAGENTA, 1000,1000);
+        builder.setVibrate(new long[]{1000,1000,1000,1000,1000});
+        builder.setDefaults(Notification.DEFAULT_SOUND);
+
+        NotificationManagerCompat notificationManagerCompat=  NotificationManagerCompat.from(getApplicationContext());
+        notificationManagerCompat.notify(Notificacion_ID,builder.build());
+
+
     }
 }
